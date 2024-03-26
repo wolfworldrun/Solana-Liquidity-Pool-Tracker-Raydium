@@ -13,7 +13,7 @@ let credits = 0;
 // Supply Radium public key and assign to a variable
 const raydium = new PublicKey(RAYDIUM_PUBLIC_KEY);
 // Initialize connecition
-const connection = new Connection('https://aged-divine-dinghy.solana-mainnet.quiknode.pro/af81fddc9fd5bc64839b55e5b563e17aeb9ea336/', { // QuickNode HTTPS and WSS Solana Mainnet endpoint
+const connection = new Connection(HTTP_URL, { // QuickNode HTTPS and WSS Solana Mainnet endpoint
     wsEndpoint: WSS_URL,
     httpHeaders: {"x-session-hash": SESSION_HASH} // Sending hash which created in the beginning
 });
